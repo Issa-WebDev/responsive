@@ -98,6 +98,7 @@ body {
 
 .menu-close,
 .menu-open {
+  display: none;
   position: absolute;
   font-size: 1.8rem;
   display: none;
@@ -105,7 +106,6 @@ body {
   top: 38px;
   z-index: 10;
   width: 25px;
-  display: none;
   cursor: pointer;
 }
 
