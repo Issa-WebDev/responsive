@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: teal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-image: linear-gradient(45deg, rgb(15, 70, 70), teal);
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.logo span {
+  color: teal;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav ul li a {
+  font-size: 1rem;
+}
+
+.buy-btn {
+  display: flex;
+  gap: 50px;
+}
+
+.buy-btn .btn {
+  padding: 5px 20px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(12, 68, 68),
+    teal,
+    rgb(12, 68, 68)
+  );
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* Section */
+.intro {
+  display: flex;
+  padding: 50px 5%;
+}
+.intro-text {
+  padding-top: 100px;
+  flex: 1;
+}
+.intro-text .title {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.intro-text p {
+  max-width: 700px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+.intro-image {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 600px;
+}
+.intro-image img {
+  width: 100%;
+}
+
+.menu-close,
+.menu-open {
+  position: absolute;
+  font-size: 1.8rem;
+  display: none;
+  right: 5%;
+  top: 38px;
+  z-index: 10;
+  width: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-close img,
+.menu-open img {
+  width: 100%;
+}
+
+/* RESPONSIVE WITH MY SON CHICO */
+@media (max-width: 1311px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-text p {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-text {
+    width: 100%;
+  }
+  .intro-text .title {
+    font-size: 2rem;
+  }
+  .intro-text p {
+    max-width: 100%;
+  }
+  .nav,
+  .nav ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .btn-top {
+    gap: 20px;
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav,
+  .nav ul,
+  .buy-btn {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-open {
+    font-size: 1.5rem;
+    display: block;
+  }
+  .nav {
+    display: none;
+    background-color: rgb(59, 196, 196);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    /* justify-content: center; */
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 408px) {
+  .intro-text .title {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  .intro-text p {
+    text-align: center;
+  }
+}

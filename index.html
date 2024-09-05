@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Of Header -->
+    <header class="header">
+      <div class="logo">CHI<span>CO</span></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Models</a></li>
+          <li><a href="">Feedback</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="buy-btn btn-top">
+          <button class="btn location">Location</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </nav>
+      <div class="menu-open">
+        <img src="icons/hamburger-menu.svg" />
+      </div>
+      <div class="menu-close">
+        <img src="icons/delete.png" />
+      </div>
+    </header>
+    <!-- End Of Header -->
+
+    <!-- Start Of Section -->
+    <section class="intro">
+      <div class="intro-text">
+        <h1 class="title">Welcome On Our Website</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          excepturi quasi vitae nihil omnis debitis ipsam magni? Consequuntur,
+          necessitatibus aliquid. Hic non quas tempora minus cumque asperiores
+          at laudantium alias!lorem import moduleName from.
+        </p>
+        <div class="buy-btn">
+          <button class="btn location">Location</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+      <div class="intro-image">
+        <img src="astro.png" alt="astro image" />
+      </div>
+    </section>
+    <!-- End Of Section -->
+
+    <!-- JS code  -->
+    <script>
+      const openMenu = document.querySelector(".menu-open");
+      const closeMenu = document.querySelector(".menu-close");
+      const nav = document.querySelector(".nav");
+
+      openMenu.addEventListener("click", function () {
+        nav.style.display = "flex";
+        openMenu.style.display = "none";
+        closeMenu.style.display = "block";
+      });
+
+      closeMenu.addEventListener("click", function () {
+        nav.style.display = "none";
+        openMenu.style.display = "block";
+        closeMenu.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
